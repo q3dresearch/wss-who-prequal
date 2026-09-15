@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-09-15T12:02:15Z",
+  "generated_from": [
+    "2026-09.csv.gz"
+  ],
+  "note": "Inferred from the derived rows, not hand-written. Regenerate with examples/write_schema.py after any derive.",
+  "source": {
+    "source_id": "who.pq.vaccines",
+    "schema_id": "who-pq-vaccine.v1",
+    "cadence": "monthly",
+    "licence": "CC BY-NC-SA 3.0 IGO — https://www.who.int/about/policies/publishing/copyright",
+    "personal_data": "none",
+    "storage": "git",
+    "publisher": "World Health Organization",
+    "endpoints": 6
+  },
+  "observations": {
+    "rows": 2291,
+    "columns": [
+      "series_id",
+      "entity_id",
+      "observed_at",
+      "captured_at",
+      "metric",
+      "value",
+      "unit",
+      "source_id",
+      "raw_ref",
+      "parser_version"
+    ],
+    "partitions": [
+      "2026-09.csv.gz"
+    ],
+    "entities_all_series": 291,
+    "series": {
+      "who.pq.vaccines": {
+        "rows": 2279,
+        "entities": 285,
+        "entity_id_samples": [
+          "abrysvo",
+          "abrysvo-0",
+          "adacel"
+        ],
+        "metrics": [
+          "commercial_name",
+          "doses",
+          "listed",
+          "manufacturer",
+          "prequalification_date",
+          "presentation",
+          "responsible_nra",
+          "vaccine_type"
+        ]
+      },
+      "who.pq.vaccines.pages": {
+        "rows": 12,
+        "entities": 6,
+        "entity_id_samples": [
+          "page-0",
+          "page-1",
+          "page-2"
+        ],
+        "metrics": [
+          "next_page_present",
+          "rows_on_page"
+        ]
+      }
+    },
+    "parser_versions": [
+      "3"
+    ]
+  },
+  "metrics": {
+    "commercial_name": {
+      "rows": 285,
+      "unit": "text",
+      "type": "text",
+      "distinct_values": 173,
+      "entities": 285,
+      "null_or_empty": 0,
+      "samples": [
+        "Abrysvo",
+        "Adacel",
+        "Adsorbed DT Vaccine"
+      ]
+    },
+    "doses": {
+      "rows": 284,
+      "unit": "text",
+      "type": "int",
+      "distinct_values": 9,
+      "entities": 284,
+      "null_or_empty": 0,
+      "min": "1",
+      "max": "50",
+      "samples": [
+        "1",
+        "10",
+        "17"
+      ]
+    },
+    "listed": {
+      "rows": 285,
+      "unit": "presence",
+      "type": "bool",
+      "distinct_values": 1,
+      "entities": 285,
+      "null_or_empty": 0,
+      "samples": [
+        "1"
+      ]
+    },
+    "manufacturer": {
+      "rows": 285,
+      "unit": "text",
+      "type": "text",
+      "distinct_values": 51,
+      "entities": 285,
+      "null_or_empty": 0,
+      "samples": [
+        "AJ Vaccines A/S",
+        "Abbott Biologicals BV",
+        "AstraZeneca Pharmaceuticals LP."
+      ]
+    },
+    "next_page_present": {
+      "rows": 6,
+      "unit": "bool",
+      "type": "bool",
+      "distinct_values": 2,
+      "entities": 6,
+      "null_or_empty": 0,
+      "samples": [
+        "0",
+        "1"
+      ]
+    },
+    "prequalification_date": {
+      "rows": 285,
+      "unit": "date",
+      "type": "date",
+      "distinct_values": 180,
+      "entities": 285,
+      "null_or_empty": 0,
+      "min": "1987-01-01",
+      "max": "2026-08-24",
+      "samples": [
+        "1987-01-01",
+        "1991-02-01",
+        "1993-02-15"
+      ]
+    },
+    "presentation": {
+      "rows": 285,
+      "unit": "text",
+      "type": "text",
+      "distinct_values": 11,
+      "entities": 285,
+      "null_or_empty": 0,
+      "samples": [
+        "Ampoule",
+        "Ampoule or Vial",
+        "Applicator"
+      ]
+    },
+    "responsible_nra": {
+      "rows": 285,
+      "unit": "text",
+      "type": "text",
+      "distinct_values": 22,
+      "entities": 285,
+      "null_or_empty": 0,
+      "samples": [
+        "Agence nationale de sécurité du médicament et des produits de santé",
+        "Agencia Nacional da Vigilancia Sanitaria",
+        "Bulgarian Drug Agency"
+      ]
+    },
+    "rows_on_page": {
+      "rows": 6,
+      "unit": "count",
+      "type": "int",
+      "distinct_values": 2,
+      "entities": 6,
+      "null_or_empty": 0,
+      "min": "35",
+      "max": "50",
+      "samples": [
+        "35",
+        "50"
+      ]
+    },
+    "vaccine_type": {
+      "rows": 285,
+      "unit": "text",
+      "type": "text",
+      "distinct_values": 56,
+      "entities": 285,
+      "null_or_empty": 0,
+      "samples": [
+        "BCG",
+        "Covid-19",
+        "Dengue Tetravalent (live, attenuated)"
+      ]
+    }
+  },
+  "raw": {
+    "files": 6,
+    "bytes_on_disk": 161226,
+    "content_type": "text/html",
+    "captures": 1,
+    "first_capture": "2026-09-15T11:36:30Z",
+    "last_capture": "2026-09-15T11:37:31Z"
+  }
+}

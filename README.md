@@ -20,15 +20,15 @@ manufacturer when production is discontinued. So departure is routine — and it
 is exactly what is never written down.
 
 <p align="center">
-  <img src="examples/charts/single-supplier-exposure.svg" width="880"
-       alt="17 of 56 vaccine types have exactly one prequalified manufacturer">
+  <img src="examples/charts/exposure-and-staleness.svg" width="880"
+       alt="7 vaccine types have one supplier and nothing new prequalified in a decade">
 </p>
 
-**17 of 56 vaccine types have exactly one prequalified manufacturer** — Ebola
-Zaire, both HPV valencies, Pandemic Influenza H5N1 among them. Each is one
-withdrawal away from having no WHO-prequalified supply at all, and WHO records
-no withdrawals. (29% with dose variants merged, so the proportion does not
-depend on how the types are cut.)
+**17 of 56 vaccine types have exactly one prequalified manufacturer**, and **7
+of those have had nothing new prequalified in over a decade** — Rubella's newest
+is 20 years old, HPV Quadrivalent's 17. Each is one withdrawal away from having
+no WHO-prequalified supply at all, and WHO records no withdrawals. Sole-source
+types are older as a group: median 8.0 years against 3.6.
 
 <p align="center">
   <img src="examples/charts/correlated-exposure.svg" width="880"
@@ -41,9 +41,29 @@ the twenty-two — EMA and India's CDSCO — are responsible for **sixteen of th
 seventeen**. A problem at one firm removes six vaccine types that have no other
 prequalified supplier.
 
-**These two charts must be read together.** The first counts the exposure; the
-second says it is concentrated. Taken alone the first overstates how
-diversified the failure modes are.
+<p align="center">
+  <img src="examples/charts/oversight-matrix.svg" width="880"
+       alt="manufacturers by regulator: CDSCO covers 130 products, 107 from two makers">
+</p>
+
+**And the two concentrations are one concentration.** India's CDSCO is the
+responsible authority for 130 of the 285 products, and 107 of those come from
+just two manufacturers. Each manufacturer goes through essentially one
+regulator, so a regulator-level problem and a manufacturer-level problem land
+on the same cells rather than different ones.
+
+**These three charts are a chain.** The first counts the exposure and shows it
+is also stale; the second shows it is concentrated in a few firms; the third
+shows the regulator axis is not a second, independent safeguard. Any one of
+them alone overstates how diversified the failure modes are.
+
+## The shape, without downloading anything
+
+[`SCHEMA.md`](SCHEMA.md) and [`schema/who.pq.vaccines.json`](schema/who.pq.vaccines.json)
+are generated from the derived rows at derive time — every metric with its row
+count, entity count, type, cardinality and range, per series. **You should not
+have to clone a repo and gunzip a partition to find out whether the data is
+worth having.**
 
 A GitHub Actions pipeline captures the list **monthly** and publishes it here as
 clean, append-only CSVs. Each capture is a dated statement that these 285

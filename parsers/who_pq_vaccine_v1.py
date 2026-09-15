@@ -38,7 +38,10 @@ from html import unescape
 
 from wss import derive
 
-PARSER_VERSION = "2"
+PARSER_VERSION = "3"
+
+# Fetch-shape metrics live here, never in the product series.
+PAGES = "who.pq.vaccines.pages"
 
 COMMENT = re.compile(r"<!--.*?-->", re.S)
 ROW = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
@@ -97,13 +100,20 @@ def parse(body: bytes, ctx: derive.ParseContext):
                 yield derive.Observation(entity_id=entity, metric=name,
                                          value=value, unit="text")
 
-    # Page-level, keyed on the page. `next_page_present` on the LAST configured
-    # page is the truncation alarm: the list grew past the endpoints in the
-    # registry and a product is being missed silently.
+    # Page-level, in their OWN SERIES. These are facts about the fetch, not
+    # about vaccines, and sharing the product entity namespace put six
+    # `page-N` rows next to 285 products -- a reader joining on entity_id
+    # would have picked up six vaccines that do not exist. The schema file
+    # surfaced it by reporting 291 entities for a 285-row list.
+    #
+    # `next_page_present` on the LAST configured page is the truncation alarm:
+    # the list grew past the endpoints in the registry and a product is being
+    # missed silently.
     yield derive.Observation(entity_id=page_id, metric="rows_on_page",
-                             value=rows, unit="count")
+                             value=rows, unit="count", series_id=PAGES)
     yield derive.Observation(entity_id=page_id, metric="next_page_present",
-                             value=1 if NEXT.search(html) else 0, unit="bool")
+                             value=1 if NEXT.search(html) else 0, unit="bool",
+                             series_id=PAGES)
 
 
 derive.register("who-pq-vaccine.v1", parse, PARSER_VERSION)
