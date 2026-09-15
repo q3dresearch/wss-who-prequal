@@ -67,6 +67,38 @@ produces. What the archive adds is the date a dot moves left.
 | W5 | **Do the sibling PQ lists behave the same way?** | The antivenom list carries the identical *"WHO may suspend or remove"* sentence with no status column. Medicines, IVDs, vector control and immunization devices are unscreened | **open, answerable now without capture** |
 | W6 | **Does anyone else already archive this list?** | If so, cite them and retire this | **blocked** — web.archive.org was offline 2026-09-15 |
 
+
+## The four categories asked on 2026-09-15, screened
+
+| category | status | what was found |
+| --- | --- | --- |
+| **Failed vaccines** | **not observable — terminal** | WHO publishes *only* positive lists. `vaccines-not-recommended` 404s; the Prequalified Vaccine Annual Report is a document landing page with no table; the COVID EUL page is another positive list (`Vaccine \| WHO EUL Holder \| NRA of record`); and the antivenom *List of Product Assessment Outcomes* is positive-only too. There is no rejected-application record anywhere in WHO PQ. **Recorded so the question is not re-asked** |
+| **Lead time to users** | **blocked** | One end is in hand — the prequalification date. The other end is first procurement, which means UNICEF Supply Division, and `unicef.org/supply/documents/vaccine-price-data` returns **403** to a declared bot. Blocked on access, not on existence |
+| **Distribution and recall window** | **larder, and a different event than it sounds** | WHO Medical Product Alerts run **2013–2026, all retained on one page** — so cite, never capture. 15 of 90 alerts name a vaccine. **But every one is a FALSIFIED (counterfeit) alert, not a recall of legitimate product.** It answers *was this vaccine counterfeited*, not *was it withdrawn* |
+| **Variants and formulations** | **answered, from one capture** | See A5–A6 below |
+
+### The join, measured rather than assumed
+
+A naive token match between alert titles and the 171 commercial names gave 6 of
+12 "matches" and **half were false**: *Falsified Fluzone Quadrivalent* matched
+`afluria® quadrivalent` on the word "Quadrivalent", and *Falsified oral cholera
+vaccine* matched `oral poliomyelitis vaccines` on "oral". Checked directly
+instead: **Fluzone and Comirnaty are in the prequalified list; COVISHIELD is
+not.** So the join exists and is thin — a handful of products over a decade.
+
+## Answerable today — formulations
+
+| # | Question | Answer |
+| --- | --- | --- |
+| A5 | **Do manufacturers extend a product line within a vaccine type?** | 155 manufacturer×type families; **82 hold more than one product**. But **43 of those 82 were prequalified entirely on one day** — that is one filing with several presentations, not a sequence. Only 39 show real spacing |
+| A6 | **How long to add a variant, when it is a sequence?** | **Median 2.94 years** between consecutive prequalifications in the same manufacturer×type family (p10 0.38y, p90 9.93y, max 13.6y, n=47 intervals) |
+| A7 | **Is formulation observable at all?** | Yes, and the vocabulary is small: Vial 220, Vial+Ampoule 18, two-vial set 16, Ampoule 14, then Plastic Tube 6, Sprayer 2, Applicator, Uniject, Buffer Sachet. Doses cluster at 1 (109), 10 (79), 20 (37), 5 (33) — multi-dose vials dominate |
+
+**The trap, for the fifth time.** Every one of those pages returns a `withdraw`
+hit that is the EU cookie banner's *"Withdraw consent"*. It has now produced a
+false positive on the vaccines list, the antivenom list, the news page, the
+PQVAR page and the COVID EUL page. **Grep the table, never the page.**
+
 ## The precision ceiling, computed before any chart implies otherwise
 
 **The cohort is 285 products, and that is the ceiling on everything below.**
