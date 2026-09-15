@@ -1,232 +1,112 @@
 # wss-who-prequal — what WHO has prequalified, and what it quietly stopped listing
 
 **WHO prequalification is a procurement gate.** UNICEF Supply Division and Gavi
-may only buy prequalified product, so presence on WHO's list decides what
-reaches most of the world's routine immunisation programmes. There are **285
-prequalified vaccines** today, across six pages of fifty.
+may only buy prequalified product, so this list decides what reaches most of the
+world's routine immunisation programmes. **285 vaccines** are on it today.
 
-**The list says who holds it now, and nothing else.** Its seven columns are
-Date of Prequalification, Vaccine Type, Commercial Name, Presentation, No. of
-doses, Manufacturer and Responsible NRA — not one of them is a status. The
-Drupal view behind it exposes thirteen filters and every one is a product
-attribute. There is no delisted, withdrawn or suspended page (all three 404),
-no dated file series, no CSV export and no archive path.
+**It publishes seven columns and not one of them is a status.** There is no
+delisted, withdrawn or suspended page, no dated file series, no export and no
+archive. A product that leaves simply stops appearing — and WHO's own procedures
+have a section headed *"Withdrawal from the list of WHO-prequalified vaccines"*
+saying it happens routinely when a manufacturer discontinues production.
 
-**And WHO says plainly that it removes products.** The list page states *"WHO
-may suspend or remove a vaccine from the list"*, and WHO's post-prequalification
-procedures carry a section headed *"Withdrawal from the list of WHO-prequalified
-vaccines"*, noting that in most cases status is withdrawn voluntarily by a
-manufacturer when production is discontinued. So departure is routine — and it
-is exactly what is never written down.
+This repository captures the list **monthly**. Each capture is a dated statement
+that these products held prequalification on that day. **The first one that
+shrinks is what it exists for.**
 
 <p align="center">
   <img src="examples/charts/exposure-and-staleness.svg" width="880"
        alt="7 vaccine types have one supplier and nothing new prequalified in a decade">
 </p>
 
-**17 of 56 vaccine types have exactly one prequalified manufacturer**, and **7
-of those have had nothing new prequalified in over a decade** — Rubella's newest
-is 20 years old, HPV Quadrivalent's 17. Each is one withdrawal away from having
-no WHO-prequalified supply at all, and WHO records no withdrawals. Sole-source
-types are older as a group: median 8.0 years against 3.6.
+**17 of 56 vaccine types have exactly one prequalified manufacturer, and 7 of
+those have had nothing new in over a decade** — Rubella's newest is 20 years
+old. Each is one withdrawal away from no WHO-prequalified supply at all.
 
 <p align="center">
   <img src="examples/charts/correlated-exposure.svg" width="880"
        alt="the 17 exposed types rest on 9 manufacturers; one firm is sole maker for 6">
 </p>
 
-**But those 17 are not 17 independent risks.** Serum Institute of India is the
-sole maker for **six** of them and Merck for **three**, and two regulators of
-the twenty-two — EMA and India's CDSCO — are responsible for **sixteen of the
-seventeen**. A problem at one firm removes six vaccine types that have no other
-prequalified supplier.
+**And they are not 17 independent risks.** Serum Institute of India is sole
+maker for six of them, Merck for three.
 
 <p align="center">
   <img src="examples/charts/oversight-matrix.svg" width="880"
-       alt="manufacturers by regulator: CDSCO covers 130 products, 107 from two makers">
+       alt="CDSCO covers 130 products, 107 from two makers">
 </p>
-
-**And the two concentrations are one concentration.** India's CDSCO is the
-responsible authority for 130 of the 285 products, and 107 of those come from
-just two manufacturers. Each manufacturer goes through essentially one
-regulator, so a regulator-level problem and a manufacturer-level problem land
-on the same cells rather than different ones.
-
-**These three charts are a chain.** The first counts the exposure and shows it
-is also stale; the second shows it is concentrated in a few firms; the third
-shows the regulator axis is not a second, independent safeguard. Any one of
-them alone overstates how diversified the failure modes are.
 
 <p align="center">
   <img src="examples/charts/oversight-over-time.svg" width="880"
        alt="one regulator now vouches for half of everything newly prequalified">
 </p>
 
-**And the concentration is growing.** India's CDSCO signed off **41%** of
-everything prequalified before 2010, **45%** in 2010–2017 and **50%** since
-2018. Half of every vaccine prequalified in the last eight years was vouched for
-by one national regulator.
-
-*(That chart also surfaced a data-quality problem worth knowing: there are 22
-authority strings but 21 bodies — `CBER/FDA` and `US Food and Drug
-Administration- Office of Vaccine Research and Review` are the same regulator,
-split across two spellings. They are deliberately left unmerged; the publisher's
-values are what was captured.)*
+**Nor does oversight diversify them.** India's CDSCO is the responsible
+authority for 130 of the 285, and 107 of those come from two manufacturers — and
+its share is growing: **41%** before 2010, **45%** in 2010–2017, **50%** since
+2018.
 
 <p align="center">
   <img src="examples/charts/vial-sizes.svg" width="880"
        alt="9 vaccine types cannot be had in a vial smaller than ten doses">
 </p>
 
-**Nine vaccine types cannot be had in a vial smaller than ten doses** — all five
-oral polio variants, BCG, and both Meningococcal A conjugates. An opened
-multi-dose vial must be used within hours or discarded, so a programme
-vaccinating scattered or low-turnout populations throws most of a 20-dose vial
-away to reach one child. These are precisely the vaccines given in outreach
-settings.
+**Nine types cannot be had in a vial under ten doses** — all five oral polio
+variants, BCG, both Meningococcal A conjugates. An opened multi-dose vial must
+be used within hours, and these are the vaccines given in low-turnout outreach.
 
-## The shape, without downloading anything
+The five charts are a chain: the exposure, whether it is concentrated, whether
+oversight offsets it, where it is heading, and what it costs operationally.
 
-[`SCHEMA.md`](SCHEMA.md) and [`schema/who.pq.vaccines.json`](schema/who.pq.vaccines.json)
-are generated from the derived rows at derive time — every metric with its row
-count, entity count, type, cardinality and range, per series. **You should not
-have to clone a repo and gunzip a partition to find out whether the data is
-worth having.**
+## The data
 
-A GitHub Actions pipeline captures the list **monthly** and publishes it here as
-clean, append-only CSVs. Each capture is a dated statement that these 285
-products held prequalification on that day. The first one that shrinks is the
-thing this archive exists for.
-
-**What this can and cannot become.** 285 products is the ceiling: a departure
-rate takes years to pin down, and any ranking of manufacturers by risk would be
-overselling it. What it answers well is evidentiary — *which product held
-prequalification on which date* — and that is a lookup no other source offers.
-The arithmetic is in [`docs/research-questions.md`](docs/research-questions.md).
-
-## The data you get
-
-The files to query are `derived/observations/<YYYY-MM>.csv` — one row per
-entity, per metric, per day:
+`derived/observations/<YYYY-MM>.csv.gz` — one row per entity, per metric, per
+capture:
 
 ```
 series_id, entity_id, observed_at, captured_at, metric, value, unit, source_id, raw_ref, parser_version
 ```
 
-- `entity_id` — the thing being measured
-- `observed_at` / `captured_at` — when the fact was true / when we saw it
-- `raw_ref` — the archived response the row was parsed from, so every number
-  is checkable back to bytes
+`entity_id` is WHO's own product slug. `raw_ref` points at the archived response
+the row was parsed from, so every number is checkable back to bytes.
+
+**[`SCHEMA.md`](SCHEMA.md) describes the shape without downloading anything** —
+every metric with its type, cardinality and range, per series. Generated at
+derive time, never hand-written.
 
 ```bash
-head derived/observations/*.csv            # no tooling required
-python examples/load_observations.py       # sqlite + example queries
-duckdb -c "SELECT * FROM read_csv_auto('derived/observations/*.csv') LIMIT 5"
+duckdb -c "SELECT * FROM read_csv_auto('derived/observations/*.csv.gz') LIMIT 5"
+python examples/load_observations.py    # sqlite + example queries
 ```
-
-## Coverage
-
-Date ranges are machine-readable in [health/health.csv](health/health.csv)
-(`first_success_at` → `last_success_at`, updated each run).
 
 | series | what it lists | covered since | status |
 | --- | --- | --- | --- |
-| _add a row per source_ | | | ongoing |
+| `who.pq.vaccines` | prequalified vaccines, one row per product | 2026-09 | ongoing |
+| `who.pq.vaccines.pages` | fetch shape: rows per page, truncation alarm | 2026-09 | ongoing |
 
-Rules for this table: a **new series** gets a row with the date coverage
-starts; a **discontinued series** keeps its row with a *covered until* date
-and status *discontinued* — its data stays in the repo forever. Nothing
-already published is removed.
-
-## What you can build from it
-
-<!-- TODO: the end products. Trend curves, leaderboards, survival analysis,
-     divergence between attention and usage — whatever this domain supports. -->
-
-## How it runs
-
-Three scheduled workflows a day — capture (22:10 UTC), health (23:40),
-derive (00:20) — powered by the
-[wss](https://github.com/q3dresearch/wss) engine, pinned to one
-version. No workflow ever names a source: capture shards whatever
-`registry/` marks active, so infrastructure never changes when sources do.
-The bot commits **data only** — it never changes code; the one config it may
-touch is flipping a repeatedly-failing source to `auto_disabled`, with an
-issue explaining why.
-
-## Adding a source
-
-1. Add `registry/<source_id>.yml` (copy the example entry), `status: paused`.
-2. Add a parser in `parsers/` if the payload shape is new.
-3. `wss doctor <source_id>` — **read the raw response**.
-4. Flip to `status: active`, add a Coverage row, commit.
-
-Nothing else. No workflow edits, ever.
-
-## Run it locally
-
-```bash
-python -m venv .venv && . .venv/bin/activate
-pip install -r requirements.txt
-export WSS_CONTACT="you@example.com"   # identifies you to publishers
-
-wss validate
-wss doctor <source_id>
-wss capture --cadence monthly
-wss derive --parsers parsers.<module>
-wss health --dry-run
-```
-
-## Going live
-
-1. Push this repo **and the engine repo** under the same GitHub owner
-   (`q3dresearch`) — the workflows install the engine from
-   `github.com/q3dresearch/wss` at the pinned tag.
-2. Set the repo secret **`WSS_CONTACT`** — capture refuses to run
-   without it.
-3. Run `capture-weekly` once by hand (Actions → capture-weekly → Run
-   workflow), confirm the bot's data commit lands, then let the cron take
-   over.
-
-## Licences
-
-Two separate files, on purpose: code is MIT ([LICENSE](LICENSE)); data
-(`raw/`, `manifest/`, `derived/`) is CC-BY-4.0
-([LICENSE-DATA](LICENSE-DATA)), citation in [CITATION.cff](CITATION.cff).
-Captured content remains subject to the publisher's own terms.
-
-Topics: `git-scraping` · `open-data` · `point-in-time-data` · `dataset`
+A discontinued series keeps its row with a *covered until* date. Nothing already
+published is removed.
 
 ## The one number to watch
 
 `next_page_present` on the last configured page. The list is paginated and the
-registry names pages 0–5 explicitly; page 5 held 35 rows and dropped its
-`rel="next"` link on 2026-09-15. **If page 5 ever reports `next_page_present=1`
-the list has grown past the endpoints and a product is being missed silently.**
-That is a data value rather than a hope that somebody notices.
+registry names pages 0–5; page 5 held 35 rows and dropped its `rel="next"` link
+on 2026-09-15. **If it ever reports 1, the list has outgrown the endpoints and a
+product is being missed silently.**
 
-## Traps, recorded so the next person does not pay for them
+## How it runs
 
-**Do not grep these pages for status words.** `withdraw` appears twelve times in
-the HTML of the vaccines list and **all twelve are the EU cookie banner's
-"Withdraw consent"**. The same is true of WHO's antivenom list. Read the table.
+Three scheduled workflows a month — capture on the 7th, derive an hour later,
+health on the 8th — on the [wss](https://github.com/q3dresearch/wss-engine)
+engine, pinned to one version. No workflow names a source: capture shards
+whatever `registry/` marks active. The bot commits data only.
 
-**The key is the product slug, not the name.** Each row links to
-`/prequal/vaccines/p/<slug>` — `abrysvo`, `pneubevax-14r`, and `bevacr-0` /
-`bevacr-1` for two presentations of one brand. Hashing commercial name and
-manufacturer was the alternative; it turns a rename into a departure plus an
-arrival, which is the one event this archive exists to catch.
-
-**`<time datetime>` carries a spurious time-of-day.** The attribute reads
-`2025-01-16T17:37:05+01:00` while the cell shows `16/01/2025`. The time is a
-record-editing timestamp. Only the date is emitted.
-
-**The HTML ships Drupal THEME DEBUG comments inside every cell.** Strip comments
-before tags or cell text comes out as a paragraph of template paths.
+Questions, open and closed, with the precision ceiling this cohort can reach:
+**[`docs/research-questions.md`](docs/research-questions.md)**.
 
 ## Licence
 
-The captured data is WHO's and is **CC BY-NC-SA 3.0 IGO — non-commercial, with
-attribution and share-alike**. This is more restrictive than most sources in
-this fleet. Read [`LICENSE-DATA`](LICENSE-DATA) before reusing anything;
-commercial permission can only come from WHO.
+Code MIT (see `LICENSE`). **The captured data is WHO's and is CC BY-NC-SA 3.0
+IGO — non-commercial, attribution, share-alike.** That is more restrictive than
+most open-government sources; commercial permission can only come from WHO. See
+[`LICENSE-DATA`](LICENSE-DATA) before reusing anything.
