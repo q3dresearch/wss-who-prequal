@@ -11,7 +11,7 @@ name: derive
 
 on:
   schedule:
-    - cron: "20 0 * * 2" # Tuesday, after capture + health
+    - cron: "40 23 7 * *" # the 7th, an hour after capture-monthly -- derive cannot find data the capture has not taken
   workflow_dispatch:
   pull_request:
     paths:

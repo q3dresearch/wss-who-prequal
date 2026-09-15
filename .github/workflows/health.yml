@@ -6,7 +6,7 @@ name: health
 
 on:
   schedule:
-    - cron: "40 23 * * 1" # Monday, after capture
+    - cron: "20 0 8 * *" # the 8th -- one health rebuild per capture; more runs cannot see more
   workflow_dispatch:
 
 permissions:
