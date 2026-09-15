@@ -1,0 +1,49 @@
+# Licence of the captured data
+
+**This is not an open-data repository in the sense the rest of this fleet is.**
+Most sources it holds are Open Government Licence or US federal works. This one
+is not, and the difference is load-bearing.
+
+## The source
+
+WHO applies **CC BY-NC-SA 3.0 IGO** to its content and specifies no separate
+licence for its website, so that is what the captured pages carry:
+
+- <https://www.who.int/about/policies/publishing/copyright>
+- <https://creativecommons.org/licenses/by-nc-sa/3.0/igo/>
+
+What it means, in the three parts that matter here:
+
+| | |
+| --- | --- |
+| **BY** | attribution to WHO is required |
+| **NC** | **non-commercial use only** — commercial reuse needs WHO's written permission, via WHO's permissions form |
+| **SA** | derivatives must be shared under the same licence |
+
+WHO further states that its materials may not be used to promote a product or
+an organisation, that the WHO logo needs separate written authorisation, and
+that WHO gives no warranty of any kind.
+
+## What that means for this archive
+
+The raw captures under `raw/` and the tables under `derived/` are reproductions
+and derivatives of WHO material, and they inherit the licence above. They are
+published here for **non-commercial** research and public-interest use, with
+attribution to WHO as the source of the underlying list.
+
+**If you intend any commercial use, your permission has to come from WHO, not
+from this repository.** Nothing here can grant it.
+
+## What this repository's own work is licensed as
+
+The code — the engine configuration in `registry/`, the parsers in `parsers/`,
+the workflows — is MIT, as in `LICENSE`. That covers the software only, and
+does not and cannot relicense WHO's data.
+
+## Attribution
+
+> World Health Organization, *List of Prequalified Vaccines*,
+> <https://extranet.who.int/prequal/vaccines/prequalified-vaccines>,
+> captured as dated in `manifest/`.
+
+WHO has not endorsed this archive and is not responsible for it.

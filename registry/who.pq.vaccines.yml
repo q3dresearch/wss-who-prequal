@@ -1,0 +1,82 @@
+# Every vaccine WHO has prequalified, and nothing about the ones it removed.
+#
+# WHO PREQUALIFICATION IS A PROCUREMENT GATE, NOT A RANKING. UNICEF Supply
+# Division and Gavi may only buy prequalified product, so presence on this list
+# decides what reaches most of the world's routine immunisation programmes.
+# 285 products across six pages.
+#
+# WHAT PERISHES, AND WHY IT IS INVISIBLE. The table has seven columns --
+# Date of Prequalification, Vaccine Type, Commercial Name, Presentation,
+# No. of doses, Manufacturer, Responsible NRA -- and NONE of them is a status.
+# The Drupal view behind it exposes thirteen filters and every one is a product
+# attribute. There is no delisted, withdrawn or suspended page (all three 404),
+# no dated file series, no CSV export, and no archive path. A product that
+# leaves simply stops appearing.
+#
+# AND WHO SAYS PLAINLY THAT IT REMOVES THEM. The list page states "WHO may
+# suspend or remove a vaccine from the list", and the post-prequalification
+# procedures page carries a section headed "Withdrawal from the list of
+# WHO-prequalified vaccines" which says that in most cases status is withdrawn
+# voluntarily by a manufacturer on discontinuation of production. So departure
+# is routine rather than exceptional, and it is exactly what is not recorded.
+#
+# THE SAME SHAPE RUNS ACROSS THE FAMILY. The snake-antivenom list at
+# /prequal/vaccines/list-product-assessment-outcomes carries the identical
+# sentence -- "WHO may suspend or remove an antivenom from the list" -- with no
+# status column either. Vaccines is the first source here, not the only one.
+#
+# DO NOT GREP THIS PAGE FOR STATUS WORDS. "withdraw" appears twelve times in
+# the HTML and all twelve are the EU cookie banner's "Withdraw consent". The
+# same is true of the antivenom page. Read the table, never the page.
+source_id: who.pq.vaccines
+status: active
+cadence: monthly
+schema_id: who-pq-vaccine.v1
+
+publisher: World Health Organization
+publisher_tier: first_party
+destroys_own_history: true
+# WHO applies CC BY-NC-SA 3.0 IGO to its content and specifies no separate
+# licence for the website. NON-COMMERCIAL and SHARE-ALIKE, and commercial
+# reuse needs written permission -- materially more restrictive than the OGL
+# and US-federal sources most of this fleet holds. Attribution is required.
+licence: "CC BY-NC-SA 3.0 IGO — https://www.who.int/about/policies/publishing/copyright"
+personal_data: none
+storage: git
+
+notes: >-
+  Which vaccines have lost WHO prequalification, and when? The list answers
+  only who holds it today. 285 products over six pages of fifty; a single
+  departure is 0.35% of the list and leaves no trace on the site.
+
+endpoints:
+  # Page 0 through 5. Page 5 held 35 rows and dropped the rel=next link on
+  # 2026-09-15, so six pages is the whole list. The parser emits
+  # next_page_present per page: if page 5 ever advertises a next page the
+  # capture has silently truncated, and that shows up in the data rather
+  # than in nobody noticing.
+  - url: "https://extranet.who.int/prequal/vaccines/prequalified-vaccines?page=0"
+    delay_seconds: 3
+  - url: "https://extranet.who.int/prequal/vaccines/prequalified-vaccines?page=1"
+    delay_seconds: 3
+  - url: "https://extranet.who.int/prequal/vaccines/prequalified-vaccines?page=2"
+    delay_seconds: 3
+  - url: "https://extranet.who.int/prequal/vaccines/prequalified-vaccines?page=3"
+    delay_seconds: 3
+  - url: "https://extranet.who.int/prequal/vaccines/prequalified-vaccines?page=4"
+    delay_seconds: 3
+  - url: "https://extranet.who.int/prequal/vaccines/prequalified-vaccines?page=5"
+    delay_seconds: 3
+
+gates:
+  expect_status: 200
+  # The lightest real page observed was page 5 at 326,892 bytes; an empty page
+  # still renders about 159,000 bytes of chrome, so this floor separates a page
+  # with rows from one without.
+  min_bytes: 250000
+  content_type_any: [html]
+  # The view's own column id. Gating on a generic word would pass the site's
+  # 404 page, which is styled and 159 KB.
+  must_contain: ["view-field-vwa-prequalification-date-table-column"]
+  must_not_contain: ["Access Denied", "rate limit"]
+  max_shrink_pct: 25
