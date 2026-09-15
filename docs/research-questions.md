@@ -102,6 +102,54 @@ hit that is the EU cookie banner's *"Withdraw consent"*. It has now produced a
 false positive on the vaccines list, the antivenom list, the news page, the
 PQVAR page and the COVID EUL page. **Grep the table, never the page.**
 
+
+## 2026-09-15 — the key is not stable, and a historical test proved it
+
+**web.archive.org came back online and holds ~monthly captures of this list from
+October 2023 to August 2025.** That is a two-year back-history nobody here had,
+and it was used immediately to attack W2 (*does the list ever shrink?*) without
+waiting twelve months. The attempt failed instructively.
+
+**What the archive actually holds is page 1 of 6** — 50 of ~285 products, the
+alphabetical head. Twelve product slugs on page 1 in October 2023 are not on
+page 1 today. That reads like twelve departures. It is not:
+
+| | | |
+| --- | ---: | --- |
+| still in the register, just pushed to a later page | **10** | pagination, not departure |
+| **re-slugged** | **1** | `engerix` → `engerix-b`, same commercial name "Engerix", still listed |
+| genuinely absent from all 285 | **1** | `act-hib` — no slug, no name match |
+
+**RETIREMENT CONDITION 4 HAS FIRED.** This file already said: *"The slug stops
+being stable. If products change slug on rename, a departure cannot be told from
+a rename and the founding question is unanswerable at this identity."* Engerix
+is that case, found on the first historical test rather than in a year.
+
+### What it means and what it does not
+
+It does **not** mean the archive is worthless. It means the entity key needs a
+second leg. `engerix` and `engerix-b` share a commercial name, a manufacturer
+and a prequalification date, so a rename is recoverable — but only by a parser
+that carries those and a derive step willing to match on them. The current
+parser emits them; nothing joins on them yet.
+
+It does mean **any departure count taken from slug alone is an upper bound, and
+on this sample it was twelve times too high.**
+
+### The open question this creates
+
+| # | Question | Needs |
+| --- | --- | --- |
+| W7 | **How often do slugs change without the product changing?** | A rename rate. Two captures a year apart, matched on commercial name + manufacturer + prequalification date, counting slug changes among products that never left |
+| W8 | **Is `act-hib` a real departure or a rename I could not match?** | Sanofi's Act-HIB, present 2023-10, absent 2026-09. Check WHO's own announcements and the manufacturer before calling it a delisting |
+
+### Backfill is still worth doing, with the caveat attached
+
+~20 Wayback captures, Oct 2023 to Aug 2025, page 1 only. It gives a real
+two-year panel over the alphabetical head, which is enough to measure the RENAME
+RATE (W7) even though it cannot measure the departure rate. Do that first: the
+rename rate is what decides whether the departure measurement is possible at all.
+
 ## The precision ceiling, computed before any chart implies otherwise
 
 **The cohort is 285 products, and that is the ceiling on everything below.**
