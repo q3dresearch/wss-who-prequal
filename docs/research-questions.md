@@ -38,11 +38,19 @@ types**, across six pages of fifty.
 
 ![single-supplier exposure](../examples/charts/single-supplier-exposure.svg)
 
+![correlated exposure](../examples/charts/correlated-exposure.svg)
+
+**These two are a chain and the caption says so on the chart itself.** The first
+counts 17 exposed vaccine types; the second shows they rest on 9 manufacturers
+and 3 regulators. Reading the first alone overstates how independent the
+failure modes are — which is step 11 question 4 of the wss sequence, and the
+reason the second chart exists.
+
 | # | Question | Answer |
 | --- | --- | --- |
 | A1 | **How many vaccine types rest on a single manufacturer?** | **17 of 56 (30%)** at WHO's own granularity; **15 of 52 (29%)** with dose and age variants merged. The proportion does not depend on the choice. Includes Ebola Zaire, both HPV valencies, and Pandemic Influenza H5N1 |
-| A2 | **How concentrated is manufacture?** | Serum Institute of India holds **72 of 285 (25%)**; the top five manufacturers hold **56%** |
-| A3 | **How concentrated is oversight?** | India's CDSCO is the responsible NRA for **130 of 285 (46%)**; the top five NRAs cover **75%**. A regulator-level problem is not a product-level problem |
+| A2 | **How concentrated is manufacture?** | Serum Institute of India holds **72 of 285 (25%)**; the top five manufacturers hold **56%**. Among the 17 exposed types it is starker: Serum Institute is sole maker for **6**, Merck for **3** |
+| A3 | **How concentrated is oversight?** | India's CDSCO is the responsible NRA for **130 of 285 (46%)**; the top five NRAs cover **75%**. Among the 17 exposed types, **EMA and CDSCO cover 16**. A regulator-level problem is not a product-level problem |
 | A4 | **How old is the list?** | Median prequalification age **12.0 years**; oldest 1987, newest last month |
 
 **These need no archive.** They are why the repo is worth running, not what it

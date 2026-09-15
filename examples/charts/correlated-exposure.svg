@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="580" viewBox="0 0 1020 580" font-family='system-ui, -apple-system, "Segoe UI", sans-serif'>
+<rect width="1020" height="580" fill="#fcfcfb"/>
+<text x="34" y="44" font-size="21" font-weight="600" fill="#0b0b0b">Those 17 exposed types are really about 9 &#8212; one firm is sole maker for 6</text>
+<text x="34" y="70" font-size="13.5" fill="#52514e">The 17 vaccine types with a single prequalified manufacturer, grouped by who that manufacturer is. One dot per type.</text>
+<text x="34" y="89" font-size="13.5" fill="#52514e"><tspan font-weight="600" fill="#0b0b0b">Read this with the exposure chart, never instead of it.</tspan> That one counts 17 risks; this one shows they are not independent.</text>
+<text x="34" y="112" font-size="13.5" fill="#52514e">Colour is the regulator responsible. Two of the twenty-two cover 16 of 17, so a REGULATOR-level problem is not a product-level problem.</text>
+<circle cx="40" cy="152" r="6" fill="#1b4f8a" fill-opacity="0.75"/>
+<text x="52" y="157" font-size="12" fill="#52514e">EMA</text>
+<circle cx="95.6" cy="152" r="6" fill="#d17b00" fill-opacity="0.75"/>
+<text x="107.6" y="157" font-size="12" fill="#52514e">CDSCO (India)</text>
+<circle cx="223.2" cy="152" r="6" fill="#8a8880" fill-opacity="0.75"/>
+<text x="235.2" y="157" font-size="12" fill="#52514e">other</text>
+<line x1="330" y1="207.6" x2="960" y2="207.6" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="212.6" font-size="13" fill="#0b0b0b" text-anchor="end">Serum Institute of India Pvt. Ltd.</text>
+<circle cx="350" cy="207.6" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="380" cy="207.6" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="410" cy="207.6" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="440" cy="207.6" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="470" cy="207.6" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="500" cy="207.6" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="544" y="212.6" font-size="12.5" font-weight="600" fill="#8a8880">6</text>
+<line x1="330" y1="242.7" x2="960" y2="242.7" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="247.7" font-size="13" fill="#0b0b0b" text-anchor="end">Merck Sharp &amp; Dohme LLC</text>
+<circle cx="350" cy="242.7" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="380" cy="242.7" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="410" cy="242.7" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="454" y="247.7" font-size="12.5" font-weight="600" fill="#8a8880">3</text>
+<line x1="330" y1="277.8" x2="960" y2="277.8" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="282.8" font-size="13" fill="#0b0b0b" text-anchor="end">Biological E. Limited</text>
+<circle cx="350" cy="277.8" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle cx="380" cy="277.8" r="9.5" fill="#d17b00" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="424" y="282.8" font-size="12.5" font-weight="600" fill="#8a8880">2</text>
+<line x1="330" y1="312.9" x2="960" y2="312.9" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="317.9" font-size="13" fill="#0b0b0b" text-anchor="end">AstraZeneca Pharmaceuticals LP.</text>
+<circle cx="350" cy="312.9" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="394" y="317.9" font-size="12.5" font-weight="600" fill="#8a8880">1</text>
+<line x1="330" y1="348.0" x2="960" y2="348.0" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="353.0" font-size="13" fill="#0b0b0b" text-anchor="end">Bavarian Nordic A/S</text>
+<circle cx="350" cy="348.0" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="394" y="353.0" font-size="12.5" font-weight="600" fill="#8a8880">1</text>
+<line x1="330" y1="383.1" x2="960" y2="383.1" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="388.1" font-size="13" fill="#0b0b0b" text-anchor="end">GlaxoSmithKline Biologicals SA</text>
+<circle cx="350" cy="383.1" r="9.5" fill="#8a8880" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="394" y="388.1" font-size="12.5" font-weight="600" fill="#8a8880">1</text>
+<line x1="330" y1="418.2" x2="960" y2="418.2" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="423.2" font-size="13" fill="#0b0b0b" text-anchor="end">Pfizer Europe MA EEIG</text>
+<circle cx="350" cy="418.2" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="394" y="423.2" font-size="12.5" font-weight="600" fill="#8a8880">1</text>
+<line x1="330" y1="453.3" x2="960" y2="453.3" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="458.3" font-size="13" fill="#0b0b0b" text-anchor="end">Sanofi Vaccines US Inc.</text>
+<circle cx="350" cy="453.3" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="394" y="458.3" font-size="12.5" font-weight="600" fill="#8a8880">1</text>
+<line x1="330" y1="488.4" x2="960" y2="488.4" stroke="#f0efe9" stroke-width="1"/>
+<text x="314" y="493.4" font-size="13" fill="#0b0b0b" text-anchor="end">Sanofi Winthrop Industrie</text>
+<circle cx="350" cy="488.4" r="9.5" fill="#1b4f8a" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1.5"/>
+<text x="394" y="493.4" font-size="12.5" font-weight="600" fill="#8a8880">1</text>
+<text x="34" y="540" font-size="12" fill="#8a8880">A problem at the top firm removes 6 vaccine types that have no other prequalified supplier &#8212; not one.</text>
+<text x="34" y="557" font-size="12" fill="#8a8880">One capture. WHO records no withdrawals, so the date any of these dots disappears exists only in this archive.</text>
+</svg>

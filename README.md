@@ -30,10 +30,20 @@ withdrawal away from having no WHO-prequalified supply at all, and WHO records
 no withdrawals. (29% with dose variants merged, so the proportion does not
 depend on how the types are cut.)
 
-Two more numbers from the same single capture: **Serum Institute of India makes
-72 of the 285 products**, and **one regulator — India's CDSCO — is the
-responsible authority for 130 of them.** Concentration is measurable today.
-Whether it is worsening is what the archive is for.
+<p align="center">
+  <img src="examples/charts/correlated-exposure.svg" width="880"
+       alt="the 17 exposed types rest on 9 manufacturers; one firm is sole maker for 6">
+</p>
+
+**But those 17 are not 17 independent risks.** Serum Institute of India is the
+sole maker for **six** of them and Merck for **three**, and two regulators of
+the twenty-two — EMA and India's CDSCO — are responsible for **sixteen of the
+seventeen**. A problem at one firm removes six vaccine types that have no other
+prequalified supplier.
+
+**These two charts must be read together.** The first counts the exposure; the
+second says it is concentrated. Taken alone the first overstates how
+diversified the failure modes are.
 
 A GitHub Actions pipeline captures the list **monthly** and publishes it here as
 clean, append-only CSVs. Each capture is a dated statement that these 285
