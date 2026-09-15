@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760" font-family='system-ui, -apple-system, "Segoe UI", sans-serif'>
+<rect width="1080" height="760" fill="#fcfcfb"/>
+<text x="34" y="44" font-size="21" font-weight="600" fill="#0b0b0b">9 vaccine types cannot be had in a vial smaller than ten doses</text>
+<text x="34" y="70" font-size="13.5" fill="#52514e">Each row is a vaccine type; the bar runs from the smallest to the largest vial WHO has prequalified for it. Worst first, top 26 of 56.</text>
+<text x="34" y="89" font-size="13.5" fill="#52514e"><tspan font-weight="600" fill="#0b0b0b">An opened multi-dose vial must be used within hours or discarded.</tspan> A type whose bar never reaches 1 leaves a programme no way out of that.</text>
+<text x="34" y="108" font-size="13.5" fill="#52514e">All five oral polio variants and BCG are in the orange group &#8212; exactly the vaccines given in outreach settings with low daily turnout.</text>
+<text x="34" y="131" font-size="12.5" fill="#8a8880">One capture. 120 of 285 products are 10-dose or larger.</text>
+<rect x="324" y="174" width="622" height="176" fill="#fbf1e4"/>
+<line x1="340.0" y1="174" x2="340.0" y2="676" stroke="#f0efe9" stroke-width="1"/>
+<text x="340.0" y="698" font-size="12" fill="#8a8880" text-anchor="middle">1</text>
+<line x1="444.5" y1="174" x2="444.5" y2="676" stroke="#f0efe9" stroke-width="1"/>
+<text x="444.5" y="698" font-size="12" fill="#8a8880" text-anchor="middle">2</text>
+<line x1="582.7" y1="174" x2="582.7" y2="676" stroke="#f0efe9" stroke-width="1"/>
+<text x="582.7" y="698" font-size="12" fill="#8a8880" text-anchor="middle">5</text>
+<line x1="687.3" y1="174" x2="687.3" y2="676" stroke="#f0efe9" stroke-width="1"/>
+<text x="687.3" y="698" font-size="12" fill="#8a8880" text-anchor="middle">10</text>
+<line x1="791.8" y1="174" x2="791.8" y2="676" stroke="#f0efe9" stroke-width="1"/>
+<text x="791.8" y="698" font-size="12" fill="#8a8880" text-anchor="middle">20</text>
+<line x1="930.0" y1="174" x2="930.0" y2="676" stroke="#f0efe9" stroke-width="1"/>
+<text x="930.0" y="698" font-size="12" fill="#8a8880" text-anchor="middle">50</text>
+<text x="322" y="199.4" font-size="12" fill="#0b0b0b" text-anchor="end">Polio Vaccine - Novel Oral (nOPV) Type 2</text>
+<line x1="791.8" y1="195.4" x2="930.0" y2="195.4" stroke="#d17b00" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="791.8" cy="195.4" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="930.0" cy="195.4" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="199.4" font-size="11.5" fill="#8a8880">20/50</text>
+<text x="322" y="218.3" font-size="12" fill="#0b0b0b" text-anchor="end">BCG</text>
+<line x1="687.3" y1="214.3" x2="791.8" y2="214.3" stroke="#d17b00" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="687.3" cy="214.3" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="214.3" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="218.3" font-size="11.5" fill="#8a8880">10/20</text>
+<text x="322" y="237.1" font-size="12" fill="#0b0b0b" text-anchor="end">Polio Vaccine - Oral (OPV) Trivalent</text>
+<line x1="687.3" y1="233.1" x2="791.8" y2="233.1" stroke="#d17b00" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="687.3" cy="233.1" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="233.1" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="237.1" font-size="11.5" fill="#8a8880">10/20</text>
+<text x="322" y="256.0" font-size="12" fill="#0b0b0b" text-anchor="end">Polio Vaccine - Oral (OPV) Bivalent…</text>
+<line x1="687.3" y1="252.0" x2="791.8" y2="252.0" stroke="#d17b00" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="687.3" cy="252.0" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="252.0" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="256.0" font-size="11.5" fill="#8a8880">10/20</text>
+<text x="322" y="274.8" font-size="12" fill="#0b0b0b" text-anchor="end">Polio Vaccine - Oral (OPV) Monovalent…</text>
+<line x1="687.3" y1="270.8" x2="791.8" y2="270.8" stroke="#d17b00" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="687.3" cy="270.8" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="270.8" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="274.8" font-size="11.5" fill="#8a8880">10/20</text>
+<text x="322" y="293.7" font-size="12" fill="#0b0b0b" text-anchor="end">Polio Vaccine - Oral (OPV) Monovalent…</text>
+<line x1="687.3" y1="289.7" x2="791.8" y2="289.7" stroke="#d17b00" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="687.3" cy="289.7" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="289.7" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="293.7" font-size="11.5" fill="#8a8880">10/20</text>
+<text x="322" y="312.5" font-size="12" fill="#0b0b0b" text-anchor="end">Polio Vaccine - Oral (OPV) Monovalent…</text>
+<line x1="687.3" y1="308.5" x2="791.8" y2="308.5" stroke="#d17b00" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="687.3" cy="308.5" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="308.5" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="312.5" font-size="11.5" fill="#8a8880">10/20</text>
+<text x="322" y="331.3" font-size="12" fill="#0b0b0b" text-anchor="end">Meningococcal A Conjugate 5 µg</text>
+<circle cx="687.3" cy="327.3" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="331.3" font-size="11.5" fill="#8a8880">10</text>
+<text x="322" y="350.2" font-size="12" fill="#0b0b0b" text-anchor="end">Meningococcal A Conjugate 10 µg</text>
+<circle cx="687.3" cy="346.2" r="5.5" fill="#d17b00" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="350.2" font-size="11.5" fill="#8a8880">10</text>
+<text x="322" y="369.0" font-size="12" fill="#52514e" text-anchor="end">Yellow Fever</text>
+<line x1="444.5" y1="365.0" x2="791.8" y2="365.0" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="444.5" cy="365.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="365.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="365.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="365.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="369.0" font-size="11.5" fill="#8a8880">2/5/10/20</text>
+<text x="322" y="387.9" font-size="12" fill="#52514e" text-anchor="end">Diphtheria-Tetanus</text>
+<line x1="340.0" y1="383.9" x2="791.8" y2="383.9" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="383.9" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="383.9" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="383.9" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="387.9" font-size="11.5" fill="#8a8880">1/10/20</text>
+<text x="322" y="406.7" font-size="12" fill="#52514e" text-anchor="end">Hepatitis B</text>
+<line x1="340.0" y1="402.7" x2="791.8" y2="402.7" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="402.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="402.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="402.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="406.7" font-size="11.5" fill="#8a8880">1/10/20</text>
+<text x="322" y="425.6" font-size="12" fill="#52514e" text-anchor="end">Diphtheria-Tetanus (reduced antigen…</text>
+<line x1="340.0" y1="421.6" x2="791.8" y2="421.6" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="421.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="421.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="421.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="425.6" font-size="11.5" fill="#8a8880">1/10/20</text>
+<text x="322" y="444.4" font-size="12" fill="#52514e" text-anchor="end">Diphtheria-Tetanus-Pertussis (whole…</text>
+<line x1="340.0" y1="440.4" x2="791.8" y2="440.4" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="440.4" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="440.4" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="440.4" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="444.4" font-size="11.5" fill="#8a8880">1/10/20</text>
+<text x="322" y="463.3" font-size="12" fill="#52514e" text-anchor="end">Measles</text>
+<line x1="340.0" y1="459.3" x2="791.8" y2="459.3" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="459.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="444.5" cy="459.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="459.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="459.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="459.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="463.3" font-size="11.5" fill="#8a8880">1/2/5/10/20</text>
+<text x="322" y="482.1" font-size="12" fill="#52514e" text-anchor="end">Tetanus Toxoid</text>
+<line x1="340.0" y1="478.1" x2="791.8" y2="478.1" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="478.1" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="478.1" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="791.8" cy="478.1" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="482.1" font-size="11.5" fill="#8a8880">1/10/20</text>
+<text x="322" y="501.0" font-size="12" fill="#52514e" text-anchor="end">Influenza, Pandemic (H1N1)</text>
+<line x1="340.0" y1="497.0" x2="767.3" y2="497.0" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="497.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="497.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="497.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="767.3" cy="497.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="501.0" font-size="11.5" fill="#8a8880">1/5/10/17</text>
+<text x="322" y="519.8" font-size="12" fill="#52514e" text-anchor="end">Influenza, seasonal (Trivalent)</text>
+<line x1="340.0" y1="515.8" x2="687.3" y2="515.8" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="515.8" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="515.8" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="519.8" font-size="11.5" fill="#8a8880">1/10</text>
+<text x="322" y="538.7" font-size="12" fill="#52514e" text-anchor="end">Influenza, seasonal (Quadrivalent)</text>
+<line x1="340.0" y1="534.7" x2="687.3" y2="534.7" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="534.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="534.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="538.7" font-size="11.5" fill="#8a8880">1/10</text>
+<text x="322" y="557.5" font-size="12" fill="#52514e" text-anchor="end">Hepatitis B (Paediatric)</text>
+<line x1="340.0" y1="553.5" x2="687.3" y2="553.5" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="553.5" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="553.5" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="557.5" font-size="11.5" fill="#8a8880">1/10</text>
+<text x="322" y="576.3" font-size="12" fill="#52514e" text-anchor="end">Diphtheria-Tetanus-Pertussis (whole…</text>
+<line x1="340.0" y1="572.3" x2="687.3" y2="572.3" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="572.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="444.5" cy="572.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="572.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="572.3" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="576.3" font-size="11.5" fill="#8a8880">1/2/5/10</text>
+<text x="322" y="595.2" font-size="12" fill="#52514e" text-anchor="end">Diphtheria-Tetanus-Pertussis (whole…</text>
+<line x1="340.0" y1="591.2" x2="687.3" y2="591.2" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="591.2" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="591.2" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="595.2" font-size="11.5" fill="#8a8880">1/10</text>
+<text x="322" y="614.0" font-size="12" fill="#52514e" text-anchor="end">Polio Vaccine - Inactivated (IPV)</text>
+<line x1="340.0" y1="610.0" x2="687.3" y2="610.0" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="610.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="444.5" cy="610.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="610.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="610.0" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="614.0" font-size="11.5" fill="#8a8880">1/2/5/10</text>
+<text x="322" y="632.9" font-size="12" fill="#52514e" text-anchor="end">Measles and Rubella</text>
+<line x1="340.0" y1="628.9" x2="687.3" y2="628.9" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="628.9" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="444.5" cy="628.9" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="628.9" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="628.9" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="632.9" font-size="11.5" fill="#8a8880">1/2/5/10</text>
+<text x="322" y="651.7" font-size="12" fill="#52514e" text-anchor="end">Measles, Mumps and Rubella</text>
+<line x1="340.0" y1="647.7" x2="687.3" y2="647.7" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="647.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="444.5" cy="647.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="647.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="647.7" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="651.7" font-size="11.5" fill="#8a8880">1/2/5/10</text>
+<text x="322" y="670.6" font-size="12" fill="#52514e" text-anchor="end">Pneumococcal (conjugate)</text>
+<line x1="340.0" y1="666.6" x2="687.3" y2="666.6" stroke="#1b4f8a" stroke-width="3" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="340.0" cy="666.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="444.5" cy="666.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="549.1" cy="666.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="582.7" cy="666.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<circle cx="687.3" cy="666.6" r="5.5" fill="#1b4f8a" fill-opacity="0.8" stroke="#fcfcfb" stroke-width="1.2"/>
+<text x="942" y="670.6" font-size="11.5" fill="#8a8880">1/2/4/5/10</text>
+<text x="942" y="170" font-size="11.5" fill="#8a8880">sizes</text>
+<text x="635" y="728" font-size="13" fill="#52514e" text-anchor="middle">doses per vial (log)</text>
+<text x="34" y="734" font-size="12" fill="#8a8880">Orange: no presentation under ten doses. One dot per distinct vial size prequalified for that type.</text>
+</svg>

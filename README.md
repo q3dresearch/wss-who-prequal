@@ -57,6 +57,34 @@ is also stale; the second shows it is concentrated in a few firms; the third
 shows the regulator axis is not a second, independent safeguard. Any one of
 them alone overstates how diversified the failure modes are.
 
+<p align="center">
+  <img src="examples/charts/oversight-over-time.svg" width="880"
+       alt="one regulator now vouches for half of everything newly prequalified">
+</p>
+
+**And the concentration is growing.** India's CDSCO signed off **41%** of
+everything prequalified before 2010, **45%** in 2010–2017 and **50%** since
+2018. Half of every vaccine prequalified in the last eight years was vouched for
+by one national regulator.
+
+*(That chart also surfaced a data-quality problem worth knowing: there are 22
+authority strings but 21 bodies — `CBER/FDA` and `US Food and Drug
+Administration- Office of Vaccine Research and Review` are the same regulator,
+split across two spellings. They are deliberately left unmerged; the publisher's
+values are what was captured.)*
+
+<p align="center">
+  <img src="examples/charts/vial-sizes.svg" width="880"
+       alt="9 vaccine types cannot be had in a vial smaller than ten doses">
+</p>
+
+**Nine vaccine types cannot be had in a vial smaller than ten doses** — all five
+oral polio variants, BCG, and both Meningococcal A conjugates. An opened
+multi-dose vial must be used within hours or discarded, so a programme
+vaccinating scattered or low-turnout populations throws most of a 20-dose vial
+away to reach one child. These are precisely the vaccines given in outreach
+settings.
+
 ## The shape, without downloading anything
 
 [`SCHEMA.md`](SCHEMA.md) and [`schema/who.pq.vaccines.json`](schema/who.pq.vaccines.json)

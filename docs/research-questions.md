@@ -92,6 +92,9 @@ not.** So the join exists and is thin — a handful of products over a decade.
 | --- | --- | --- |
 | A5 | **Do manufacturers extend a product line within a vaccine type?** | 155 manufacturer×type families; **82 hold more than one product**. But **43 of those 82 were prequalified entirely on one day** — that is one filing with several presentations, not a sequence. Only 39 show real spacing |
 | A6 | **How long to add a variant, when it is a sequence?** | **Median 2.94 years** between consecutive prequalifications in the same manufacturer×type family (p10 0.38y, p90 9.93y, max 13.6y, n=47 intervals) |
+| A8 | **Is the oversight concentration stable or growing?** | **Growing.** CDSCO signed 41% of pre-2010 prequalifications, 45% in 2010–2017, **50% since 2018** (n=91, 88, 106). See `oversight-over-time.svg` |
+| A9 | **Which vaccine types force a multi-dose vial?** | **9 of 56 have no presentation under ten doses** — all five oral polio variants, BCG, both Meningococcal A conjugates. 120 of 285 products are 10-dose or larger. An opened multi-dose vial must be used within hours; these are the vaccines given in low-turnout outreach. See `vial-sizes.svg` |
+| A10 | **Is the NRA vocabulary clean?** | **No — 22 strings, 21 bodies.** `CBER/FDA` (7) and `US Food and Drug Administration- Office of Vaccine Research and Review` (5) are the same regulator; WHO's own string is also missing a space after the hyphen. Together 12 products, which would rank the US 7th rather than 9th and 10th. **Left unmerged in the data** — a silent merge is a judgement the next reader cannot see |
 | A7 | **Is formulation observable at all?** | Yes, and the vocabulary is small: Vial 220, Vial+Ampoule 18, two-vial set 16, Ampoule 14, then Plastic Tube 6, Sprayer 2, Applicator, Uniject, Buffer Sachet. Doses cluster at 1 (109), 10 (79), 20 (37), 5 (33) — multi-dose vials dominate |
 
 **The trap, for the fifth time.** Every one of those pages returns a `withdraw`

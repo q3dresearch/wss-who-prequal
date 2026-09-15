@@ -1,6 +1,6 @@
 # Data shape — `who.pq.vaccines`
 
-*Generated 2026-09-15T12:02:15Z by `examples/write_schema.py` from the derived rows. Do not hand-edit — regenerate after any derive.*
+*Generated 2026-09-15T13:01:58Z by `examples/write_schema.py` from the derived rows. Do not hand-edit — regenerate after any derive.*
 
 **You should not need to download anything to read this.**
 
