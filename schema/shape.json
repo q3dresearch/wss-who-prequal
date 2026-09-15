@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-15T13:01:58Z",
-  "generated_from": [
-    "2026-09.csv.gz"
-  ],
-  "note": "Inferred from the derived rows, not hand-written. Regenerate with examples/write_schema.py after any derive.",
-  "source": {
-    "source_id": "who.pq.vaccines",
-    "schema_id": "who-pq-vaccine.v1",
-    "cadence": "monthly",
-    "licence": "CC BY-NC-SA 3.0 IGO — https://www.who.int/about/policies/publishing/copyright",
-    "personal_data": "none",
-    "storage": "git",
-    "publisher": "World Health Organization",
-    "endpoints": 6
+  "generated_at": "2026-09-15T13:15:08Z",
+  "note": "Inferred from the derived rows by `wss schema`, not hand-written. Regenerate after any derive.",
+  "sources": {
+    "who.pq.vaccines": {
+      "source_id": "who.pq.vaccines",
+      "schema_id": "who-pq-vaccine.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO — https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 6
+    }
   },
   "observations": {
     "rows": 2291,
@@ -31,7 +31,6 @@
     "partitions": [
       "2026-09.csv.gz"
     ],
-    "entities_all_series": 291,
     "series": {
       "who.pq.vaccines": {
         "rows": 2279,
@@ -75,9 +74,12 @@
       "rows": 285,
       "unit": "text",
       "type": "text",
-      "distinct_values": 173,
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 285,
-      "null_or_empty": 0,
+      "distinct_values": 173,
+      "empty": 0,
       "samples": [
         "Abrysvo",
         "Adacel",
@@ -87,10 +89,13 @@
     "doses": {
       "rows": 284,
       "unit": "text",
-      "type": "int",
-      "distinct_values": 9,
+      "type": "number",
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 284,
-      "null_or_empty": 0,
+      "distinct_values": 9,
+      "empty": 0,
       "min": "1",
       "max": "50",
       "samples": [
@@ -103,9 +108,12 @@
       "rows": 285,
       "unit": "presence",
       "type": "bool",
-      "distinct_values": 1,
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 285,
-      "null_or_empty": 0,
+      "distinct_values": 1,
+      "empty": 0,
       "samples": [
         "1"
       ]
@@ -114,9 +122,12 @@
       "rows": 285,
       "unit": "text",
       "type": "text",
-      "distinct_values": 51,
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 285,
-      "null_or_empty": 0,
+      "distinct_values": 51,
+      "empty": 0,
       "samples": [
         "AJ Vaccines A/S",
         "Abbott Biologicals BV",
@@ -127,9 +138,12 @@
       "rows": 6,
       "unit": "bool",
       "type": "bool",
-      "distinct_values": 2,
+      "series": [
+        "who.pq.vaccines.pages"
+      ],
       "entities": 6,
-      "null_or_empty": 0,
+      "distinct_values": 2,
+      "empty": 0,
       "samples": [
         "0",
         "1"
@@ -139,9 +153,12 @@
       "rows": 285,
       "unit": "date",
       "type": "date",
-      "distinct_values": 180,
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 285,
-      "null_or_empty": 0,
+      "distinct_values": 180,
+      "empty": 0,
       "min": "1987-01-01",
       "max": "2026-08-24",
       "samples": [
@@ -154,9 +171,12 @@
       "rows": 285,
       "unit": "text",
       "type": "text",
-      "distinct_values": 11,
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 285,
-      "null_or_empty": 0,
+      "distinct_values": 11,
+      "empty": 0,
       "samples": [
         "Ampoule",
         "Ampoule or Vial",
@@ -167,9 +187,12 @@
       "rows": 285,
       "unit": "text",
       "type": "text",
-      "distinct_values": 22,
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 285,
-      "null_or_empty": 0,
+      "distinct_values": 22,
+      "empty": 0,
       "samples": [
         "Agence nationale de sécurité du médicament et des produits de santé",
         "Agencia Nacional da Vigilancia Sanitaria",
@@ -179,10 +202,13 @@
     "rows_on_page": {
       "rows": 6,
       "unit": "count",
-      "type": "int",
-      "distinct_values": 2,
+      "type": "number",
+      "series": [
+        "who.pq.vaccines.pages"
+      ],
       "entities": 6,
-      "null_or_empty": 0,
+      "distinct_values": 2,
+      "empty": 0,
       "min": "35",
       "max": "50",
       "samples": [
@@ -194,9 +220,12 @@
       "rows": 285,
       "unit": "text",
       "type": "text",
-      "distinct_values": 56,
+      "series": [
+        "who.pq.vaccines"
+      ],
       "entities": 285,
-      "null_or_empty": 0,
+      "distinct_values": 56,
+      "empty": 0,
       "samples": [
         "BCG",
         "Covid-19",
@@ -207,8 +236,7 @@
   "raw": {
     "files": 6,
     "bytes_on_disk": 161226,
-    "content_type": "text/html",
-    "captures": 1,
+    "capture_dates": 1,
     "first_capture": "2026-09-15T11:36:30Z",
     "last_capture": "2026-09-15T11:37:31Z"
   }
