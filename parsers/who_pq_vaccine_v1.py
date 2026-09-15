@@ -34,10 +34,11 @@ parser that emits a feed total is wrong the moment one page fails its gate.
 """
 
 import re
+from html import unescape
 
 from wss import derive
 
-PARSER_VERSION = "1"
+PARSER_VERSION = "2"
 
 COMMENT = re.compile(r"<!--.*?-->", re.S)
 ROW = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
@@ -56,7 +57,10 @@ COLUMNS = ("prequalification_date", "vaccine_type", "commercial_name",
 
 
 def _text(cell: str) -> str:
-    return re.sub(r"\s+", " ", TAGS.sub(" ", COMMENT.sub("", cell))).strip()
+    # UNESCAPE LAST, and never skip it. Manufacturer names carry entities --
+    # "Merck Sharp &amp; Dohme LLC" -- and an un-unescaped value silently
+    # becomes a second, distinct manufacturer in every count drawn from it.
+    return re.sub(r"\s+", " ", unescape(TAGS.sub(" ", COMMENT.sub("", cell)))).strip()
 
 
 def parse(body: bytes, ctx: derive.ParseContext):

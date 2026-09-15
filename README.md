@@ -19,10 +19,32 @@ vaccines"*, noting that in most cases status is withdrawn voluntarily by a
 manufacturer when production is discontinued. So departure is routine — and it
 is exactly what is never written down.
 
+<p align="center">
+  <img src="examples/charts/single-supplier-exposure.svg" width="880"
+       alt="17 of 56 vaccine types have exactly one prequalified manufacturer">
+</p>
+
+**17 of 56 vaccine types have exactly one prequalified manufacturer** — Ebola
+Zaire, both HPV valencies, Pandemic Influenza H5N1 among them. Each is one
+withdrawal away from having no WHO-prequalified supply at all, and WHO records
+no withdrawals. (29% with dose variants merged, so the proportion does not
+depend on how the types are cut.)
+
+Two more numbers from the same single capture: **Serum Institute of India makes
+72 of the 285 products**, and **one regulator — India's CDSCO — is the
+responsible authority for 130 of them.** Concentration is measurable today.
+Whether it is worsening is what the archive is for.
+
 A GitHub Actions pipeline captures the list **monthly** and publishes it here as
 clean, append-only CSVs. Each capture is a dated statement that these 285
 products held prequalification on that day. The first one that shrinks is the
 thing this archive exists for.
+
+**What this can and cannot become.** 285 products is the ceiling: a departure
+rate takes years to pin down, and any ranking of manufacturers by risk would be
+overselling it. What it answers well is evidentiary — *which product held
+prequalification on which date* — and that is a lookup no other source offers.
+The arithmetic is in [`docs/research-questions.md`](docs/research-questions.md).
 
 ## The data you get
 
