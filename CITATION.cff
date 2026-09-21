@@ -8,7 +8,9 @@ abstract: >-
 authors:
   - name: "q3dresearch"
     website: "https://github.com/q3dresearch"
-license: CC-BY-4.0
+# The source is WHO CC BY-NC-SA 3.0 IGO, and LICENSE-DATA says this repo cannot
+# relicense it. CC-BY-4.0 here contradicted that file and dropped NC and SA.
+license: CC-BY-NC-SA-3.0-IGO
 keywords:
   - git-scraping
   - open-data
