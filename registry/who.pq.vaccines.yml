@@ -49,6 +49,28 @@ notes: >-
   only who holds it today. 285 products over six pages of fifty; a single
   departure is 0.35% of the list and leaves no trace on the site.
 
+  NOBODY ELSE HOLDS A USABLE SERIES, MEASURED 2026-09-23 WHEN THE ARCHIVE CAME
+  BACK. The list URL has 154 successful mementos and 141 of them are page 0 --
+  pages 1 to 6, 20 and 25 have between one and four captures each. Page 0 is
+  the first 50 of 285 products, so the Archive holds a dated series for 17.5%
+  of the register. It cannot answer the removal question AT ALL: the last name
+  on page 0 walks backwards alphabetically across the years -- Engerix (2023),
+  Easyfive-TT (2024), DTP Vaccine (2025), Diphtheria... (2026) -- so a product
+  leaving page 0 has been displaced by new arrivals sorting above it, not
+  withdrawn. Every apparent removal in that slice is displacement, and one of
+  them (Act-HIB moving from Sanofi Pasteur to Sanofi Winthrop Industrie) is a
+  manufacturer rename. Three mechanisms, one observation, and only a capture of
+  the whole register separates them.
+
+  THE HEADER TEXT MOVED AND THE PARSER DID NOT NOTICE. Between the January 2024
+  and January 2025 captures WHO renamed the first column from "Prequalification
+  Date" to "Date of Prequalification". parsers/who_pq_vaccine_v1.py survives it
+  because it reads columns BY POSITION and keys on the slug, never on header
+  text. That is the right design here and it has a matching blind spot: a
+  reordered or inserted column would be silently mislabelled rather than
+  failing. The seven columns and their order were identical in 2023 and 2026;
+  check that before trusting a future backfill.
+
 endpoints:
   # Page 0 through 5. Page 5 held 35 rows and dropped the rel=next link on
   # 2026-09-15, so six pages is the whole list. The parser emits
