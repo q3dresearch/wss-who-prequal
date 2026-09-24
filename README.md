@@ -104,6 +104,23 @@ whatever `registry/` marks active. The bot commits data only.
 Questions, open and closed, with the precision ceiling this cohort can reach:
 **[`docs/research-questions.md`](docs/research-questions.md)**.
 
+## Questions this exists to answer
+
+![All 6 questions here are answered or on a clock.](examples/charts/maturity.svg)
+
+**5 of these 6 are answered from captures already held.** 1 become answerable only as the series lengthens — the plate shows when. Every other one is on the clock, so the plate is a schedule rather than a wish list.
+
+
+| # | question | status |
+| --- | --- | --- |
+| Q1 | How many vaccine types rest on a single supplier? | **answered** — 7 have one supplier and nothing new prequalified in a decade → [exposure and staleness](examples/charts/exposure-and-staleness.svg) |
+| Q2 | Are the exposed types really independent of each other? | **answered — no.** The 17 exposed types are about 9; one firm is sole maker for several → [correlated exposure](examples/charts/correlated-exposure.svg) |
+| Q3 | Is regulator concentration a separate risk from maker concentration? | **answered — no**, they are the same concentration → [oversight matrix](examples/charts/oversight-matrix.svg) |
+| Q4 | Has that concentration moved over time? | **answered** — one regulator now vouches for half of everything newly prequalified → [oversight over time](examples/charts/oversight-over-time.svg) |
+| Q5 | Which vaccine types cannot be had in a small vial? | **answered** — 9 cannot be had below ten doses → [vial sizes](examples/charts/vial-sizes.svg) |
+| Q6 | Which products are removed from prequalification, and when? | needs 2+ captures. **The reason for capturing** — the table has seven columns and none of them is a status, so a withdrawn product simply stops appearing |
+
+
 ## Figures
 
 Built by the scripts in [`examples/`](examples/), from the captures in this
