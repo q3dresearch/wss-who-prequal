@@ -104,6 +104,42 @@ whatever `registry/` marks active. The bot commits data only.
 Questions, open and closed, with the precision ceiling this cohort can reach:
 **[`docs/research-questions.md`](docs/research-questions.md)**.
 
+## Figures
+
+Built by the scripts in [`examples/`](examples/), from the captures in this
+repository. Each caption is the figure's own title — nothing is restated here
+that the figure does not already say.
+
+**Those 17 exposed types are really about 9 &#8212; one firm is sole maker for 6**
+
+![Those 17 exposed types are really about 9 &#8212; one firm is sole maker for 6](examples/charts/correlated-exposure.svg)
+
+The 17 vaccine types with a single prequalified manufacturer, grouped by who that manufacturer is. One dot per type.
+
+**7 vaccine types have one supplier and nothing new prequalified in a decade**
+
+![7 vaccine types have one supplier and nothing new prequalified in a decade](examples/charts/exposure-and-staleness.svg)
+
+Each dot is one of the 56 vaccine types WHO prequalifies. Across: years since anything in that type was newly prequalified. Up: how many
+
+**The regulator concentration and the maker concentration are the same concentration**
+
+![The regulator concentration and the maker concentration are the same concentration](examples/charts/oversight-matrix.svg)
+
+Prequalified products by who makes them and who vouches for them. Top 9 manufacturers of 51, top 8 regulators of 22 &#8212; 187 of 285 products.
+
+**One regulator now vouches for half of everything newly prequalified**
+
+![One regulator now vouches for half of everything newly prequalified](examples/charts/oversight-over-time.svg)
+
+Every prequalified vaccine as one dot: the year it was prequalified, against the national authority that signed it off. 285 products, 22 authorities.
+
+**9 vaccine types cannot be had in a vial smaller than ten doses**
+
+![9 vaccine types cannot be had in a vial smaller than ten doses](examples/charts/vial-sizes.svg)
+
+Each row is a vaccine type; the bar runs from the smallest to the largest vial WHO has prequalified for it. Worst first, top 26 of 56.
+
 ## Licence
 
 Code MIT (see `LICENSE`). **The captured data is WHO's and is CC BY-NC-SA 3.0
